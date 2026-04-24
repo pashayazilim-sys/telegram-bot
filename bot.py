@@ -17,7 +17,7 @@ async def button(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if query.data == "buy":
         await query.message.reply_text(
-            "💰 Satın alma sistemi yakında aktif olacak.\n\nŞimdilik admin ile iletişime geç."
+            "💰 Satın alma sistemi yakında aktif olacak."
         )
 
 app = ApplicationBuilder().token(TOKEN).build()
