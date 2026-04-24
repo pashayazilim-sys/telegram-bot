@@ -13,14 +13,9 @@ def button(update, context):
     query.answer()
 
     if query.data == 'buy':
-        context.bot.send_invoice(
+        context.bot.send_message(
             chat_id=query.message.chat_id,
-            title="Premium Program",
-            description="Full erişim program",
-            payload="program",
-            provider_token="",
-            currency="XTR",
-            prices=[LabeledPrice("Program", 100)]
+            text="💰 Satın alma sistemi yakında aktif olacak.\n\nŞimdilik admin ile iletişime geç."
         )
 
 def successful_payment(update, context):
